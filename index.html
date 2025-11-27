@@ -3,150 +3,311 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>profile</title>
+    <title>Girum Asres | Software Engineer Profile</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-      p {
-        font-size: 30px;
-      }
-      nav ul li {
-        border-bottom: 2px solid black;
-        list-style: none;
-        margin-bottom: 20px;
-        text-decoration: none;
-      }
-      nav ul {
-        padding-left: 0px;
-        align-items: center;
-      }
-      p {
-        margin-right: 50px;
-      }
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
       body {
-        margin-left: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f7f9fc;
+      }
+      .accent-button {
+        background-color: #ff00f2;
+      }
+      .accent-button:hover {
+        background-color: #e000d5;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -2px rgba(0, 0, 0, 0.06);
+      }
+      .link-accent:hover {
+        color: #ff00f2;
       }
     </style>
   </head>
-  <body>
-    <div
-      style="
-        width: 1252px;
-        height: 160px;
-        border: solid;
-        display: flex;
-        align-items: center;
+  <body class="min-h-screen">
+    <div class="max-w-7xl mx-auto p-4 md:p-8">
+      <header
+        class="bg-gradient-to-r from-purple-500 to-pink-600 shadow-xl rounded-2xl p-6 mb-8 flex items-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8"
+      >
+        <div
+          class="relative w-32 h-32 rounded-full ring-4 ring-green-300 shadow-xl"
+        >
+          <img
+            src="gira.jpg"
+            alt="Girum Asres Profile Picture"
+            class="rounded-full w-full h-full object-cover"
+            onerror="this.onerror=null;this.src='https://placehold.co/128x128/9CA3AF/FFFFFF?text=G.A';"
+          />
+        </div>
 
-        box-shadow: inset 0.3px 0.3px 5px rgb(27, 39, 250);
-      "
-    >
-      <div>
-        <img
-          src="gira.jpg"
-          alt=""
-          style="
-            border-radius: 85px;
-            width: 120px;
-            height: 120px;
-            border-color: greenyellow;
-          "
-        />
+        <div class="text-center md:text-left text-white">
+          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">
+            Girum Asres
+          </h1>
+          <p class="text-xl mt-1 font-light opacity-90">ID: NSR/0369/16</p>
+          <p class="text-sm mt-2 font-medium">
+            Software Engineering Student | Wolkite University
+          </p>
+        </div>
+      </header>
 
-        <p></p>
-      </div>
-      <div style="display: flex; margin-left: 50px; flex-direction: row">
-        <p style="color: blue">Name:Girum Asres</p>
+      <!-- MAIN CONTENT AREA: Uses a 4-column grid on large screens -->
+      <main class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <!-- 1. LEFT SIDEBAR (LAB NAVIGATION) - Occupies 1/4 width on large screens -->
+        <aside
+          class="lg:col-span-1 bg-white p-6 rounded-2xl shadow-lg border border-gray-100 h-fit"
+        >
+          <h2
+            class="text-2xl font-semibold text-gray-800 border-b pb-3 mb-4 flex items-center"
+          >
+            <i
+              data-lucide="folder-open"
+              class="w-5 h-5 mr-2 text-purple-500"
+            ></i>
+            Lab Practices
+          </h2>
+          <nav>
+            <ul class="space-y-4">
+              <!-- Lab 1 Links -->
+              <li class="border-b border-gray-200 pb-2">
+                <h4 class="text-lg font-medium text-gray-700 mb-1">Lab 1</h4>
+                <ul class="pl-4 text-sm space-y-1 list-none">
+                  <li>
+                    <a
+                      href="backgroundimage.html"
+                      class="text-blue-600 link-accent transition duration-150"
+                      >background</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index.html"
+                      class="text-blue-600 link-accent transition duration-150"
+                      >paragrap</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="alignitem.html"
+                      class="text-blue-600 link-accent transition duration-150"
+                      >alignitem</a
+                    >
+                  </li>
+                </ul>
+              </li>
 
-        <p style="color: blue">ID:NSR/0369/16</p>
-      </div>
+              <!-- Lab 2 Links -->
+              <li class="border-b border-gray-200 pb-2">
+                <h4 class="text-lg font-medium text-gray-700 mb-1">Lab 2</h4>
+                <ul class="pl-4 text-sm space-y-1 list-none">
+                  <li>
+                    <a
+                      href="floatimage.html"
+                      class="text-blue-600 link-accent transition duration-150"
+                      >floatimage</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="table.html"
+                      class="text-blue-600 link-accent transition duration-150"
+                      >table</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="url.html"
+                      class="text-blue-600 link-accent transition duration-150"
+                      >about-url</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Lab 3 Links -->
+              <li class="border-b border-gray-200 pb-2">
+                <h4 class="text-lg font-medium text-gray-700 mb-1">Lab 3</h4>
+                <ul class="pl-4 text-sm space-y-1 list-none">
+                  <li>
+                    <a
+                      href="alignitem.html"
+                      class="text-blue-600 link-accent transition duration-150"
+                      >background</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="checkbox.html"
+                      class="text-blue-600 link-accent transition duration-150"
+                      >checkbuuton</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="inserttext.html"
+                      class="text-blue-600 link-accent transition duration-150"
+                      >inserttext</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="submitbutton.html"
+                      class="text-blue-600 link-accent transition duration-150"
+                      >submitbutton</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Other Pages -->
+              <li class="pt-2">
+                <h4 class="text-lg font-medium text-gray-700 mb-1">
+                  General Pages
+                </h4>
+                <ul class="pl-4 text-sm space-y-1 list-none">
+                  <li>
+                    <a
+                      href="page1.html"
+                      class="text-blue-600 link-accent transition duration-150"
+                      >Page 1</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="page2.html"
+                      class="text-blue-600 link-accent transition duration-150"
+                      >Page 2</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="page3.html"
+                      class="text-blue-600 link-accent transition duration-150"
+                      >Page 3</a
+                    >
+                  </li>
+                  <li>
+                    <a href="profile.html" class="text-purple-700 font-bold"
+                      >Profile (Current)</a
+                    >
+                  </li>
+                  <li>
+                    <a href="Bootstrap.html" class="text-purple-700 font-bold">
+                      Bootstrap
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- 2. RIGHT MAIN CONTENT - Occupies 3/4 width on large screens -->
+        <section
+          class="lg:col-span-3 bg-white p-8 rounded-2xl shadow-xl border border-gray-100"
+        >
+          <!-- ABOUT SECTION -->
+          <div class="mb-8 pb-4 border-b border-gray-200">
+            <h2 class="text-3xl font-bold text-gray-800 mb-3 flex items-center">
+              <i
+                data-lucide="user-check"
+                class="w-6 h-6 mr-2 text-blue-500"
+              ></i>
+              About Me
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              My Name is **Girum Asres** and I'm a **3rd year Software
+              Engineering Student** at Wolkite University. I am dedicated to
+              building robust web applications and exploring the field of
+              Artificial Intelligence.
+            </p>
+          </div>
+
+          <!-- SKILLS SECTION -->
+          <div class="mb-8 pb-4 border-b border-gray-200">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center">
+              <i data-lucide="code" class="w-6 h-6 mr-2 text-blue-500"></i>
+              Skills
+            </h2>
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-1.5 rounded-full shadow-md"
+                >HTML</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-1.5 rounded-full shadow-md"
+                >CSS</span
+              >
+              <span
+                class="bg-red-100 text-red-800 text-sm font-medium px-4 py-1.5 rounded-full shadow-md"
+                >Java</span
+              >
+              <span
+                class="bg-green-100 text-green-800 text-sm font-medium px-4 py-1.5 rounded-full shadow-md"
+                >Basic JavaScript</span
+              >
+            </div>
+          </div>
+
+          <!-- AMBITION/HOBBIES SECTION -->
+          <div class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center">
+              <i data-lucide="rocket" class="w-6 h-6 mr-2 text-blue-500"></i>
+              Ambition
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed font-semibold">
+              My professional goal is to become a leading **Web App Developer**
+              and **AI Developer**.
+            </p>
+          </div>
+
+          <!-- FOOTER / CONTACT SECTION -->
+          <footer class="mt-8 pt-6 border-t border-gray-200">
+            <h2
+              class="text-xl font-semibold text-orange-600 mb-4 flex items-center"
+            >
+              <i data-lucide="send" class="w-5 h-5 mr-2"></i>
+              Contact Information
+            </h2>
+            <div class="flex flex-wrap gap-4">
+              <!-- GitHub Button -->
+              <a
+                href="https://github.com/GIRUMASRES1234/Lab-Practice/blob/main/profile.html"
+                target="_blank"
+                class="block"
+              >
+                <button
+                  class="accent-button text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 flex items-center"
+                >
+                  <i data-lucide="github" class="w-5 h-5 mr-2"></i>
+                  GitHub Link
+                </button>
+              </a>
+
+              <!-- Email Button -->
+              <a
+                href="mailto:girumtech12@gmail.com"
+                target="_blank"
+                class="block"
+              >
+                <button
+                  class="accent-button text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 flex items-center"
+                >
+                  <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                  Email Me
+                </button>
+              </a>
+            </div>
+          </footer>
+        </section>
+      </main>
     </div>
-    <div
-      style="
-        border: solid;
 
-        width: 1040px;
-        height: 446px;
-        float: right;
-        margin-right: 0px;
-        box-shadow: inset 0.3px 0.3px 5px rgb(42, 196, 81);
-      "
-    >
-      <img
-        src="gira.jpg"
-        alt=""
-        style="
-          border-radius: 85px;
-          width: 100px;
-          height: 100px;
-          border-color: greenyellow;
-        "
-      />
-      <h3 style="color: blueviolet">
-        My Name is Girum Asres and I'm 3rd year Software Engineering Student in
-        Wolkite University ,<br />I want to be senior developer on python and
-        java script,In the future I want to be WEB APP Developer
-      </h3>
-       <div style="margin-top: 100px">
-        <p style="color: rgb(255, 153, 0); margin-bottom: 5px">
-          User contact Information
-        </p>
-        <a
-          href="https://github.com/GIRUMASRES1234/Lab-Practice/blob/main/profile.html"
-          >Github-Link</a
-        ><br />
-        <a href="girumtech12@gmail.com">Email</a>
-      </div>
-    </div>
-    <div
-      style="
-        width: 211px;
-        height: 448px;
-        border: solid;
-
-        border-width: 1px;
-        float: left;
-        display: flex;
-        flex-direction: column;
-
-        box-shadow: inset 0.3px 0.3px 5px rgb(27, 39, 250);
-      "
-    >
-      <nav style="display: flex; flex-direction: column; flex: 1">
-        <ul>
-          <ul>
-            <h3>lab 1</h3>
-            <li>
-              <a href="backgroundimage.html">background</a>,
-              <a href="index.html">paragrap</a>
-              <a href="alignitem.html">alignitem</a>
-            </li>
-          </ul>
-          <ul>
-            <h3>lab 2</h3>
-            <li>
-              <a href="floatimage.html">floatimage</a>,
-              <a href="table.html">table</a>,
-              <a href="url.html">about-url</a>
-            </li>
-          </ul>
-          <ul>
-            <h3>lab 3</h3>
-            <li>
-              <a href="alignitem.html">background</a>,
-              <a href="checkbox.html">checkbuuton</a>,
-              <a href="inserttext.html">inserttext</a>,
-              <a href="submitbutton.html">submitbutton</a>
-            </li>
-          </ul>
-
-          <li><a href="page1.html" class="current">page 1</a><br /></li>
-          <li><a href="page2.html">page 2</a><br /></li>
-          <li><a href="page3.html">page 3</a><br /></li>
-          <li><a href="index.html">profile</a></li>
-        </ul>
-      </nav>
-    </div>
+    <script>
+      // Function to ensure icons are rendered after the page loads
+    </script>
   </body>
 </html>
-
-
-
-
