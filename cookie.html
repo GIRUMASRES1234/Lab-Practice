@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Basic page styling */
+      body {
+        font-family: sans-serif;
+        margin: 40px;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      /* Formatting the labels and inputs */
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        max-width: 300px;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        display: block;
+      }
+
+      /* Styling the buttons */
+      button {
+        padding: 10px 15px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+
+      #submitBtn {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      #submitBtn:hover {
+        background-color: #45a049;
+      }
+
+      #cookieBtn {
+        background-color: #008cba;
+        color: white;
+      }
+
+      #cookieBtn:hover {
+        background-color: #007bb5;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="firstText">First Name:</label>
+    <input id="firstText" type="text" placeholder="e.g. John" />
+
+    <label for="lastText">Last Name:</label>
+    <input id="lastText" type="text" placeholder="e.g. Doe" />
+
+    <button id="submitBtn">Submit</button>
+    <button id="cookieBtn">Get Cookies</button>
+
+    <script src="cookie.js"></script>
+  </body>
+</html>
